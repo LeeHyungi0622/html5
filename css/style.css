@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #ccc;
 }
 
 * {
@@ -15,9 +16,35 @@ body {
     margin: 0 auto;
 }
 
+
+/* 헤더 */
+
 .header {
-    background-color: yellow;
-    height: 10vh;
+    background-color: #fff;
+    /* 병합되지 않도록 trick */
+    /* border-top: 1px solid transparent; */
+    position: relative;
+}
+
+
+/* 로고 */
+
+.logo {
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    left: 65px;
+    font-size: 100%;
+    line-height: 1;
+}
+
+.logo a,
+.logo img {
+    display: block;
+}
+
+.member {
+    margin: 0;
 }
 
 .visual {
