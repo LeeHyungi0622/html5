@@ -398,8 +398,53 @@ a {
 /* 웹 관련 용어 */
 
 .term {
-    background-color: yellow;
     margin-top: 20px;
+    padding: 16px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #ccc, #eee);
+    border: 1px solid grey;
+}
+
+.term h2 {
+    margin: 0;
+    margin-bottom: 19px;
+}
+
+.term dd,
+dt,
+dl {
+    margin: 0;
+}
+
+.term::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.term-list div dd:nth-of-type(1) {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.term-list dt {
+    float: right;
+    width: 70%;
+    font-size: 14px;
+    color: rgb(12, 110, 172);
+    font-weight: 400;
+    margin: 0 0px 10px 0;
+    padding-left: 5px;
+}
+
+.term-list div dd:nth-of-type(2) {
+    float: right;
+    width: 70%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    padding-left: 5px;
 }
 
 .slogan {
