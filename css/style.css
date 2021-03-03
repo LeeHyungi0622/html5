@@ -898,5 +898,32 @@ a {
 
 .footer-content {
     background-color: pink;
-    height: 10vh;
+    display: grid;
+    grid-template-columns: 140px 1fr 100px;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: "badge guide     logo" "badge copyright   logo" "badge address logo";
+}
+
+.footer-logo {
+    grid-area: logo;
+    background-color: salmon;
+}
+
+.guide {
+    grid-area: guide;
+}
+
+.address {
+    background-color: lime;
+    grid-area: address;
+}
+
+.copyright {
+    grid-area: copyright;
+    background-color: skyblue;
+}
+
+.badge {
+    grid-area: badge;
+    background-color: teal;
 }
